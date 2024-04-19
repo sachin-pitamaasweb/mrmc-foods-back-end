@@ -8,16 +8,15 @@ exports.sendEmail = (formData) => {
             service: 'gmail',
             auth: {
                 user: `work@tixteen.com`,
-                pass: 'iqexkytojdibsru'
+                pass: 'iqexkytojdibsrur'
             }
         });
-
-
+ 
         console.log(formData.email, 'email');
         // Email message
         const mailOptions = {
-            from: `${formData.firstName} ${formData.email} `,
-            to: 'sachingautam6239@gmail.com',
+            from: `${formData.firstName} ${formData.lastName} work@tixteen.com`,
+            to: `${formData.email}`,
             subject: 'Testing Email',
             html: `
             <html>
